@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extensively Extended</title>
+    <!-- preconnects to speed up image and font loading-->
+    <link rel="preconnect" href="https://source.unsplash.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+</head>
+<body >
+    <div class="w-full">
+
+        <header class="w-full text-white flex text-center absolute">
+            <a href="https://extensivelyextended.com" class="text-base pt-2 pl-5 font-bold drop-shadow-lg font-lato">Extensively Extended</a>
+        </header>
+        <div id="backgroundImage" class="h-screen flex flex-col justify-center items-center">
+
+            <div style="" class=" h-14 justify-center">
+                <div class="pt-2 relative w-full text-gray-600">
+                        <form id="searchForm">
+                            <input autofocus id="userQuery" style="min-width: 250px; opacity: 0.9" class="font lg:w-128 md:w-96 w-full border-2 border-gray-300 bg-white h-10 px-6 pr-16 py-6 rounded-3xl text-sm outline-none"
+                                    placeholder="Search">
+
+                            <button id="searchButton" type="submit" class="absolute right-0 top-2 mt-5 mr-4">
+                                <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                     viewBox="0 1 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                                     xml:space="preserve"
+                                     width="512px" height="512px">
+                                    <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            <div/>
+
+            <div style=" margin-bottom: -90px; margin-top: 10px" id="weatherWidget" style="" class="weatherWidgetBackground p-3 hidden">
+                <span style="margin-bottom: -15px" class="drop-shadow-lg text-white text-xl text-center">
+                    <img src="./Assets/location.png" class="inline pb-1">
+                    <span id="weatherWidgetCityName">______</span>
+                </span>
+
+                <span class="drop-shadow-lg text-white text-base text-center lg:px-6 md:px-4 sm:px-2">
+                    <img id="weatherWidgetTemperatureImage" width="30" height="30" src="./Assets/cloudy.png" class="inline mb-1">
+                    <span>
+                        <span id="weatherWidgetTemperature" class="text-xl ">__</span>°C
+                    </span>
+                </span>
+
+                <span class="drop-shadow-lg text-white text-sm pt-0.5 text-center maxsm:hidden">
+                    <span id="weatherWidgetHumidity">
+                        ______
+                    </span>
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <button id="refreshBackground" style="position: absolute; left: 10px; bottom: 10px">
+        <svg fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">
+            <path d="M 15 3 C 12.031398 3 9.3028202 4.0834384 7.2070312 5.875 A 1.0001 1.0001 0 1 0 8.5058594 7.3945312 C 10.25407 5.9000929 12.516602 5 15 5 C 20.19656 5 24.450989 8.9379267 24.951172 14 L 22 14 L 26 20 L 30 14 L 26.949219 14 C 26.437925 7.8516588 21.277839 3 15 3 z M 4 10 L 0 16 L 3.0507812 16 C 3.562075 22.148341 8.7221607 27 15 27 C 17.968602 27 20.69718 25.916562 22.792969 24.125 A 1.0001 1.0001 0 1 0 21.494141 22.605469 C 19.74593 24.099907 17.483398 25 15 25 C 9.80344 25 5.5490109 21.062074 5.0488281 16 L 8 16 L 4 10 z"/>
+        </svg>
+    </button>
+    <div id="photoCredit" style="position: absolute; right: 10px; bottom: 18px" class="text-sm drop-shadow-lg font-lato font-bold mr-3 text-white text-center photoCredit hidden">
+        <p>Photo by</p>
+        <a id="imageCreatorName" class="text-base customBold"></a>
+        <span>on</span>
+        <a href="https://unsplash.com/?utm_source=ExtensivelyExtended&utm_medium=referral" class="text-base customBold">Unsplash</a>
+    </div>
+    <footer class="text-white flex flex-row mb-3 aboutFooter absolute ">
+        <a href="https://extensivelyextended.com#about" class="text-base pt-2 pl-5 drop-shadow-lg font-lato font-bold mr-3 hoverEffect text-center">About Us</a>
+        <a href="https://extensivelyextended.com#contact" class="text-base pt-2 pl-5 drop-shadow-lg font-lato font-bold hoverEffect text-center">Contact Us</a>
+        <a href="https://extensivelyextended.com/privacy.html" class="text-base pt-2 pl-5 drop-shadow-lg font-lato font-bold hoverEffect text-center">Privacy Policy</a>
+        <a href="https://extensivelyextended.com/terms.html" class="text-base pt-2 pl-5 drop-shadow-lg font-lato font-bold hoverEffect text-center">Terms & Conditions</a>
+    </footer>
+    <script type="module" src="searchTab.js"></script>
+</body>
+</html>

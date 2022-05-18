@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.font-lato{
+    font-family: 'Lato', sans-serif;
+}
+#refreshBackground{
+    border-radius: 25px;
+    padding: 5px;
+    transition: 0.3s;
+    background: rgba(0,0,0,0.1);
+}
+#refreshBackground:hover{
+   background: rgba(0,0,0,0.4);
+    transform: rotate(360deg);
+    transition: transform 1s ease-in-out;
+}
+#backgroundImage{
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+.errorOutline{
+    outline: rgba(255,0,0,0.6) solid thin !important;
+}
+
+.hoverEffect:hover{
+    transition: 0.1s;
+    color: rgb(219, 217, 217);
+}
+.weatherWidgetBackground{
+    background: rgba(0,0,0,0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+.aboutFooter{
+    bottom: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media only screen and (max-width: 860px) {
+    .photoCredit{
+        display: none;
+    }
+}
+.customBold{
+    font-family: system-ui;
+    font-weight: 500;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Extensively Extended",
+  "description": "The ultimate new tab alternative",
+  "version": "1.1.5",
+  "manifest_version": 3,
+  "chrome_url_overrides" : {
+    "newtab": "searchTab.html"
+  },
+  "permissions": [],
+  "icons": {
+    "16": "Assets/icon16.png",
+    "48": "Assets/icon48.png",
+    "128": "Assets/icon128.png" }
+}
